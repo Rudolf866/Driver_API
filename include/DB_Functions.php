@@ -42,6 +42,7 @@ class DB_Functions {
 	    			//Проверка пароля
 
 
+
 	    			if ($notification != '') {
 	    				try {
 		    				$up = $this->dbh->query("UPDATE `iwater_driver` SET `notification` = '$notification' WHERE `login` = '$login'");
@@ -68,7 +69,7 @@ class DB_Functions {
     	}
     }
 
-    /** Получение путевого листа по сессии водителя и дате листа
+    /** Получение путевого листа по сессии водителя и дате листа dfdd
     */
    public function getDriverList($session, $id) {
 			try {
